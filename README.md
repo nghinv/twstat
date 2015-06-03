@@ -1,2 +1,2 @@
 # twstat
-twstat puro selenese prova ci
+prova ci con estensioni (lettura con while)
