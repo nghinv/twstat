@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="/home/filippo/selenese_extensions/test/testcases/login_facebook_test.html">login_facebook_test</a></td></tr>
+<tr><td><a href="testcases/verify_elements_after_login.html">verify_elements_after_login</a></td></tr>
+<tr><td><a href="testcases/verify_summary_store_values.html">verify_summary_store_values</a></td></tr>
+<tr><td><a href="testcases/verify_quickfactsummary_values.html">verify_quickfactsummary_values</a></td></tr>
+<tr><td><a href="testcases/verify_fans_page.html">verify_fans_page</a></td></tr>
+<tr><td><a href="testcases/verify_engagement_page.html">verify_engagement_page</a></td></tr>
+<tr><td><a href="testcases/verify_posts_page.html">verify_posts_page</a></td></tr>
+<tr><td><a href="testcases/verify_topfans_page.html">verify_topfans_page</a></td></tr>
+<tr><td><a href="testcases/verify_responsiveness_page.html">verify_responsiveness_page</a></td></tr>
+<tr><td><a href="testcases/summary_choose_last_week.html">summary_choose_last_week</a></td></tr>
+<tr><td><a href="testcases/verify_summary_store_values.html">verify_summary_store_values</a></td></tr>
+<tr><td><a href="testcases/verify_quickfactsummary_values.html">verify_quickfactsummary_values</a></td></tr>
+<tr><td><a href="testcases/verify_fans_page.html">verify_fans_page</a></td></tr>
+<tr><td><a href="testcases/verify_engagement_page.html">verify_engagement_page</a></td></tr>
+<tr><td><a href="testcases/logout.html">logout</a></td></tr>
+<tr><td><a href="testcases/login_sephora.html">login_sephora</a></td></tr>
+<tr><td><a href="testcases/verify_elements_after_login.html">verify_elements_after_login</a></td></tr>
+<tr><td><a href="testcases/verify_summary_store_values.html">verify_summary_store_values</a></td></tr>
+<tr><td><a href="testcases/verify_quickfactsummary_values.html">verify_quickfactsummary_values</a></td></tr>
+<tr><td><a href="testcases/verify_fans_page.html">verify_fans_page</a></td></tr>
+<tr><td><a href="testcases/verify_engagement_page.html">verify_engagement_page</a></td></tr>
+<tr><td><a href="testcases/logout.html">logout</a></td></tr>
+<tr><td><a href="testcases/login_admin.html">login_admin</a></td></tr>
+<tr><td><a href="testcases/logout.html">logout</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://en79.tribalwars.net/" />
+<title>barbxy_distance_control_5</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">barbxy_distance_control_5</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.twstats.com/en79/index.php?page=village_locator&amp;stage=4&amp;source=village&amp;village_coords=563|327&amp;searchstring=&amp;tribe_id=0&amp;filter=abandoned</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Abandoned only</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array()</td>
+	<td>barbxy</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array()</td>
+	<td>barbdi</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array()</td>
+	<td>barbpt</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>j</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${j}&lt;100</td>
+	<td></td>
+</tr>
+<!--storicizzazione coordinate-->
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a</td>
+	<td>dummy</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['dummy']=storedVars['dummy'].slice(-8, -1)}</td>
+	<td>cool</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['barbxy'].push(storedVars['dummy'])}</td>
+	<td>cool</td>
+</tr>
+<!--storicizzazione punti-->
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='main']/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9]</td>
+	<td>dummy</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['dummy']=storedVars['dummy'].replace(/,/g, '')}</td>
+	<td>cool</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['barbpt'].push(storedVars['dummy'])}</td>
+	<td>cool</td>
+</tr>
+<!--storicizzazione distanze-->
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='main']/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2]</td>
+	<td>dummy</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['barbdi'].push(storedVars['dummy'])}</td>
+	<td>cool</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${dummy}&gt;12</td>
+	<td>toofar</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.j++}</td>
+	<td>cool</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>toofar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${barbxy}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${barbdi}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${barbpt}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>javascript{storedVars.j++}</td>
+	<td>cool</td>
+</tr>
+</tbody></table>
+</body>
+</html>

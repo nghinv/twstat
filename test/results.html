@@ -1,0 +1,1111 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>32</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.45</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">barbxy_distance_control_5</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">testcases/barbxy_distance_control_5.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">barbxy_distance_control_5</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.twstats.com/en79/index.php?page=village_locator&amp;stage=4&amp;source=village&amp;village_coords=563|327&amp;searchstring=&amp;tribe_id=0&amp;filter=abandoned</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Abandoned only</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Array()</td>
+	<td>barbxy</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Array()</td>
+	<td>barbdi</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Array()</td>
+	<td>barbpt</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>1</td>
+	<td>j</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>while</td>
+	<td>${j}&lt;100</td>
+	<td></td>
+</tr>
+<!--storicizzazione coordinate-->
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>storeText</td>
+	<td>//html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a</td>
+	<td>dummy</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{storedVars['dummy']=storedVars['dummy'].slice(-8, -1)}</td>
+	<td>cool</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{storedVars['barbxy'].push(storedVars['dummy'])}</td>
+	<td>cool</td>
+</tr>
+<!--storicizzazione punti-->
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>storeText</td>
+	<td>//div[@id='main']/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9]</td>
+	<td>dummy</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{storedVars['dummy']=storedVars['dummy'].replace(/,/g, '')}</td>
+	<td>cool</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{storedVars['barbpt'].push(storedVars['dummy'])}</td>
+	<td>cool</td>
+</tr>
+<!--storicizzazione distanze-->
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>storeText</td>
+	<td>//div[@id='main']/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2]</td>
+	<td>dummy</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{storedVars['barbdi'].push(storedVars['dummy'])}</td>
+	<td>cool</td>
+</tr>
+<tr class="                                                                                                                        status_done" style="cursor: pointer;">
+	<td>gotoIf</td>
+	<td>${dummy}&gt;12</td>
+	<td>toofar</td>
+</tr>
+<tr class="                                                                                                                      status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{storedVars.j++}</td>
+	<td>cool</td>
+</tr>
+<tr class="                                                                                                                      status_done" style="cursor: pointer;">
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>label</td>
+	<td>toofar</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${barbxy}</td>
+	<td>564|328,563|329,561|328,565|326,562|329,561|326,565|329,561|325,560|328,562|324,561|330,564|331,564|323,562|323,559|329,566|331,563|332,566|323,562|332,558|329,568|329,566|332,558|330,569|327,562|333,565|333,561|333,557|325,561|321,557|330,560|333,569|330,563|334,556|327,562|334,570|326,565|334,556|329,560|334,566|334,570|330,559|334,564|319,570|323,557|321,555|330,555|324,556|332,570|333,569|334,558|335,560|336,572|330,560|318,555|334,571|334,570|335,555|335,556|336,555|336</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${barbdi}</td>
+	<td>1.41,2,2.24,2.24,2.24,2.24,2.83,2.83,3.16,3.16,3.61,4.12,4.12,4.12,4.47,5,5,5,5.1,5.39,5.39,5.83,5.83,6,6.08,6.32,6.32,6.32,6.32,6.71,6.71,6.71,7,7,7.07,7.07,7.28,7.28,7.62,7.62,7.62,8.06,8.06,8.06,8.49,8.54,8.54,8.6,9.22,9.22,9.43,9.49,9.49,9.49,10.63,10.63,10.63,11.31,11.4,12.04</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${barbpt}</td>
+	<td>279,354,208,1103,270,788,418,53,229,26,382,454,187,211,186,214,295,139,298,251,92,280,361,287,241,752,444,574,197,258,418,235,369,215,384,88,215,644,340,274,232,408,167,33,69,213,240,317,357,108,549,511,373,64,548,200,281,508,356,385</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>javascript{storedVars.j++}</td>
+	<td>60</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/testcases/barbxy_distance_control_5.html
+info: Executing: |open | http://www.twstats.com/en79/index.php?page=village_locator&amp;stage=4&amp;source=village&amp;village_coords=563|327&amp;searchstring=&amp;tribe_id=0&amp;filter=abandoned |  |
+info: Executing: |clickAndWait | link=Abandoned only |  |
+info: Executing: |storeEval | new Array() | barbxy |
+info: script is: new Array()
+info: Executing: |storeEval | new Array() | barbdi |
+info: script is: new Array()
+info: Executing: |storeEval | new Array() | barbpt |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: script is: new Array()
+info: Executing: |store | 1 | j |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Executing: |store | javascript{storedVars.j++} | cool |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | ${j}&lt;100 |  |
+info: Executing: |storeText | //html/body/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[6]/a | dummy |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].slice(-8, -1)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbxy&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[9] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;dummy&apos;]=storedVars[&apos;dummy&apos;].replace(/,/g, &apos;&apos;)} | cool |
+info: Executing: |store | javascript{storedVars[&apos;barbpt&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Executing: |storeText | //div[@id=&apos;main&apos;]/table/tbody/tr/td[2]/div/table/tbody/tr[${j}+1]/td[2] | dummy |
+info: Executing: |store | javascript{storedVars[&apos;barbdi&apos;].push(storedVars[&apos;dummy&apos;])} | cool |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |gotoIf | ${dummy}&gt;12 | toofar |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |label | toofar |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | ${barbxy} |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | ${barbdi} |  |
+info: Executing: |echo | ${barbpt} |  |
+info: Executing: |echo | javascript{storedVars.j++} | cool |
+</pre></body></html>
