@@ -647,9 +647,18 @@ function xmlTestData() {
 
 
 xmlTestData.prototype.load = function(xmlloc) {
+	LOG.info(" ++ new IncludeCommand");
 	loader = new IncludeCommand();
+	LOG.info(" -- new IncludeCommand");
+	LOG.info(" ++ new IncludeCommand.getIncludeDocumentBySynchronRequest");
+	
 	var xmlHttpReq = IncludeCommand.getIncludeDocumentBySynchronRequest(xmlloc);
+	LOG.info(" -- new IncludeCommand.getIncludeDocumentBySynchronRequest");
+	
+	LOG.info(" ++ new xmlHttpReq.responseXML");
+	
 	this.xmlDoc = xmlHttpReq.responseXML;
+	LOG.info(" ++ new xmlHttpReq.responseXML");
 		
 	this.index = 0;
 	this.testdata = this.xmlDoc.getElementsByTagName("test");
